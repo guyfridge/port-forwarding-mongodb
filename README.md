@@ -25,3 +25,7 @@ Create MongoDB deployment and service
 `kubectl get service mongo`
 7. Verify that the MongoDB server is running in the Pod, and listening on port 27017
 `kubectl get pod mongo-78c7d87875-nsn2j --template='{{(index (index .spec.containers 0).ports 0).containerPort}}{{"\n"}}'`
+8. Forward a local port to a port on the service
+`kubectl port-forward service/mongo 28015:27017`
+9. Start mongosh CLI
+`mongosh --port 28015`
