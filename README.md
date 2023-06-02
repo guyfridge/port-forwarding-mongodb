@@ -1,7 +1,7 @@
 # port-forwarding-mongodb
 Practice port-forwarding with Mongodb
 ## Use Port Forwarding to Access Applications in a Cluster
-###Install mongosh
+### Install mongosh
 1. Import the MongoDB public GPG Key
 `wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -`
 2. Create a list file for MongoDB 
